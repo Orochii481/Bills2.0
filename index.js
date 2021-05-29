@@ -1,7 +1,7 @@
 /*Olá usuário..
 Este bot foi criado para o uso sem fins lucrativos
-Criador: Italu
-Colaboradores: Resen e Toin
+Base: Italu
+Reeditado: Orochii
 */
 
 //_API WHATSAPP WEB
