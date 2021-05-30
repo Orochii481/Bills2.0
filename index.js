@@ -2591,27 +2591,17 @@ tiringa.sendMessage(from, tagme, text)
 break
 
 case 'play':
-msgFilter.isFiltered(from)
-if (args.length < 1) return reply('Digite o nome da música')
-play = body.slice(5)
-reply('Procurando sua música...⏳')
-anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp4?apikey=apivinz&q=${play}`)
-if (anu.message) return reply('Música não encontrada...\nTente específicar o nome dela.')
-//aanu = await fetchJson(`https://api-tiringa.italuh.repl.co/api/yta?url=${anu.result.source}`)
-aanu = await fetchJson(`https://api-exteam.herokuapp.com/api/yt/playmp3?query=${play}&apikey=estreia`)
-infomp3 = 
-`    MÚSICA ENCONTRADA
-‣ Título: ${anu.result.title}
-‣ Fonte: ${anu.result.source}`
-buffer = await getBuffer(anu.result.thumbnail)
-//lagu = await getBuffer(anu.result.url_audio)
-lagu = await getBuffer(aanu.url)
-setTimeout( () => {
-tiringa.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
-}, 1500)
-reply('Baixando e enviando sua música...')
-tiringa.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', quoted: mek})
-break
+                reply(mess.wait)
+                play = body.slice(5)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
+               if (anu.error) return reply(anu.error)
+                 infomp3 = `*MUSICA ENCONTRADA!!!*\nTítulo : ${anu.result.title}\nUrl : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*ESPERE UM POUQUINHO, N SPAME O CHAT*`
+                buffer = await getBuffer(anu.result.thumbnail)
+                lagu = await getBuffer(anu.result.url_audio)
+                client.sendMessage(from, buffer, image, {quoted: mek, caption: infomp3})
+                client.sendMessage(from, lagu, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: mek})
+                await limitAdd(sender)
+                break
 
 case 'ytsearch':
 if (args.length < 1) return reply('Digite o que deseja procurar')
