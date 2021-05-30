@@ -30,13 +30,13 @@ const help = (pushname, prefix, temporizador, uptime, hr, tanggal, groupName, us
 ═══════════════
  ♻️NOVIDADES:
 
-❧ menu +18 use =m18
+❧ 
 ═══════════════
 ✅  COMANDOS NOVOS:
 
-❧ simi
-❧ bugreport
-❧ request
+❧
+❧ 
+❧ 
 ═══════════════
 ✔ REMOVIDOS:     
 
@@ -44,16 +44,12 @@ const help = (pushname, prefix, temporizador, uptime, hr, tanggal, groupName, us
 ═══════════════
 ⚠️AVISO:
 
-❧ v13 no github em breve...
+❧ Talvez seja a ultima atualização.
 ═══════════════
 
 ═══════════════
 ════ 🧙‍♂️ INFORMAÇÕES 🧙‍♂️
 ╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾
-│•  ${prefix}info
-│[  Informações do bot  ]
-│•  ${prefix}criador
-│[  Número do meu criador  ]
 │•  ${prefix}ping
 │[  Mostra meu tempo de resposta  ]
 │•  ${prefix}infome
@@ -62,17 +58,13 @@ const help = (pushname, prefix, temporizador, uptime, hr, tanggal, groupName, us
 │[  Mostra algumas informações do grupo  ]
 │•  ${prefix}ts
 │[  Lista os códigos de linguagem  ]
-│•  ${prefix}bugreport
-│[  Avise ao dono sobre algum bug  ]
-│•  ${prefix}request
-│[  Peça algo para ser adicionado ao bot  ]
 ╰╼╾╼╾╼╾╼╾╼╾╼╾╼╾
 ═════ ≪ •❈• ≫ ═════╝
 
 ═══════════════
 ════ 🔞 +18 🔞
 ╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾
-│•  ${prefix}m18
+│•  Tem isso naum punhetero
 ╰╼╾╼╾╼╾╼╾╼╾╼╾╼╾
 ═════ ≪ •❈• ≫ ═════╝
 
@@ -356,7 +348,7 @@ const m18 = (pushname, prefix) => {
 　　　★　*　　🛸　　　°　🚀　　　　°·　
 .　　　•　°★　•
 Caso algum comando esteja errado avise o
-wa.me/+557499510904
+wa.me/+5511952761206
 ▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄
 ╔════ 🔞 +18 🔞
 ║╭╼╾╼╾╼╾╼╾╼╾╼╾╼╾
