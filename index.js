@@ -3307,12 +3307,12 @@ if (vit == "vitoria") {
 var tes = "Vitória do jogador"
 }
 if (vit == "derrota" ) {
-var tes = "A vitória é do Tiringa-BOT"
+var tes = "A vitória é do Bills-BOT"
 }
 if (vit == "empate" ) {
 var tes = "O jogo terminou em empate"
 }
-reply(`Tiringa-BOT jogou: ${pptb}\nO jogador jogou: ${args}\n\n${tes}`)
+reply(`Bills-BOT jogou: ${pptb}\nO jogador jogou: ${args}\n\n${tes}`)
 if (tes == "Vitória do jogador") {
 reply(pph)
 }
@@ -3366,7 +3366,7 @@ const slott =
 ║                                           
 ║          [💰SLOT💰 | 777 ]        
 ╚════ ≪ •❈• ≫ ════╝
-                      @ɪᴛᴀʟᴜ
+                      @Orochii
 
 ${vitr}`
 if (vitr == "Você ganhou!!!") {
