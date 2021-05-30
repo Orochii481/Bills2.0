@@ -72,8 +72,8 @@ const blocked = []
 //_VCARD DONO DO BOT
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Italu🧙‍♂️\n' 
-            + 'ORG:Dono do Tiringa;\n' 
+            + 'FN:Orochii🧙‍♂️\n' 
+            + 'ORG:Dono do Bills;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=557499510904:+55 (74) 9951-0904\n' 
             + 'END:VCARD'
 
@@ -553,15 +553,15 @@ async function starts() {
 	tiringa.logger.level = 'warn'
 	console.log(banner.string)
 	tiringa.on('qr', () => {
-		console.log(color('👆'), color(' Escanear o código acima para iniciar o Tiringa-BOT!'))
+		console.log(color('👆'), color(' Escanear o código acima para iniciar o Bills-BOT!'))
 	})
 
 	fs.existsSync('./tiringa.json') && tiringa.loadAuthInfo('./tiringa.json')
 	tiringa.on('connecting', () => {
-		start('2', 'Conectando o Tiringa-BOT...')
+		start('2', 'Conectando o Bills-BOT...')
 	})
 	tiringa.on('open', () => {
-		success('2', 'Tiringa-BOT conectado!!!')
+		success('2', 'Bills-BOT conectado!!!')
 	})
 	await tiringa.connect({timeoutMs: 30*1000})
         fs.writeFileSync('./tiringa.json', JSON.stringify(tiringa.base64EncodedAuthInfo(), null, '\t'))
@@ -1010,7 +1010,7 @@ var options = {
  text: teks1, 
 contextInfo: {mentionedJid: [sender]}, 
 }
-tiringa.sendMessage('557499510904@s.whatsapp.net', options, text, {quoted: mek})
+tiringa.sendMessage('5511952761206@s.whatsapp.net', options, text, {quoted: mek})
 reply("Mensagem enviada ao meu dono; Spam = block + ban.")
 break
 
@@ -1023,7 +1023,7 @@ var options = {
 text: teks1,
 contextInfo: {mentionedJid: [sender]},
 }
-tiringa.sendMessage('557499510904@s.whatsapp.net', options, text, {quoted: mek})
+tiringa.sendMessage('5511952761206@s.whatsapp.net', options, text, {quoted: mek})
 reply("Mensagem enviada ao meu dono; Spam = block + ban.")
 break
 
